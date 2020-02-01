@@ -4,7 +4,10 @@ class Book
   GENRES = []
   def initialize(title)
     @title = title
-    GENRES << @genre
+    if @genre != nil
+        GENRES << @genre
+    end
+
   end
 
   def turn_page
